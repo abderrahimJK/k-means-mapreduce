@@ -1,4 +1,4 @@
-package ma.sid;
+package ma.sid.Parallel_Kmeans_algorithm;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -35,7 +35,7 @@ public class KMeansMapper extends Mapper<LongWritable, Text,Text,Text> {
         double minimumDistance = Double.MAX_VALUE;
         String nearest = null;
         double currentDist = 0;
-        String[] centroids = "81.28749159105215,52.27060220901445;3.513048359837001,55.22646671246145;2.7011548533907526,80.33258636541248".split(";");
+        String[] centroids = "18.070082172708354,87.71180266095584;17.496235883190796,32.24014953962695;70.73558741764516,47.09561764565555".split(";");
         for(String c : centroids){
             System.out.println("[#]|_______"+c);
             String[] centroid = c.split(",");
@@ -51,3 +51,7 @@ public class KMeansMapper extends Mapper<LongWritable, Text,Text,Text> {
         return nearest;
     }
 }
+
+
+
+

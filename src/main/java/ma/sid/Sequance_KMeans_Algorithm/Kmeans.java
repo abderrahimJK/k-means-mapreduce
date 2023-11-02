@@ -1,4 +1,4 @@
-package ma.sid;
+package ma.sid.Sequance_KMeans_Algorithm;
 
 import java.util.*;
 

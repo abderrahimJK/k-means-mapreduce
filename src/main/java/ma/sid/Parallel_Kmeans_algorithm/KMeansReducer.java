@@ -1,4 +1,4 @@
-package ma.sid;
+package ma.sid.Parallel_Kmeans_algorithm;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
