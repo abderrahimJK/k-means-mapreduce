@@ -36,7 +36,21 @@ In the `Sequance_KMeans_Algorithm` package, you'll find the implementation for t
 ### Part II: Parallel K-means Algorithm using Map Reduce
 In the `Parallel_Kmeans_algorithm` package, you'll find the implementation for the parallel version of the K-means algorithm using Map Reduce. This part of the project focuses on parallelizing the clustering process for big data analysis.
 
+** Classify **
+
+Assign observation to the closest cluster center
+
+![img.png](img.png)
+
 - `KMeansMapper.java`: Mapper class for the Map Reduce job, responsible for mapping input data to key-value pairs.
+    For each data point,given ({Ui}, xi)
+
+** Recenter **
+
+Revise cluster center as mean fo assigned observations.
+
+![img_1.png](img_1.png)
+
 - `KMeansReducer.java`: Reducer class for the Map Reduce job, responsible for reducing and clustering data points.
   
 ### Additional Resources
